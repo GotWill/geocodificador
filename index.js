@@ -20,7 +20,9 @@ busca.addEventListener('submit', async (event)=>{
         let json = await result.json();
         
         showGeocoder(json)
-        console.log(json)
+    }else{
+        clear()
+        aviso('Nada encontrado')
     }
 
         
@@ -50,12 +52,15 @@ function showGeocoder(json){
     const cordenada = json.features[0].center;
     // console.log(cordenada)
     p.insertAdjacentHTML('beforeend',`${cordenada}`)
+    document.querySelector('#map').style.display = 'block'
+
 
 }
 
 
 function clear (){
     aviso('')
+    document.querySelector('#map').style.display = 'none'
 }
 
 
