@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-   
-<!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script> -->
-<link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
-
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 
     <link rel="stylesheet" href="style.css">
     <title>Geocodificador</title>
@@ -28,8 +26,16 @@
 
     
     <div id="map" style="height: 300px; width: 600px"></div>
-
-
+<!-- 
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZ290d2lsbCIsImEiOiJja2tzb2lseG0wYnZzMnVxZmp2aHRrMmpmIn0.TwBtDLsSy_aw1RVaef1Sew';
+        var map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+        });
+        </script> -->
 
     <script src="index.js"></script>
     
